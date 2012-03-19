@@ -1,0 +1,21 @@
+#ifndef DRIVEBACKWARDS_H
+#define DRIVEBACKWARDS_H
+
+#include "../CommandBase.h"
+
+/**
+ *
+ *
+ * @author 322Programmer
+ */
+class DriveBackwards: public CommandBase {
+public:
+	DriveBackwards();
+	virtual void Initialize();
+	virtual void Execute();
+	virtual bool IsFinished();
+	virtual void End();
+	virtual void Interrupted();
+};
+
+#endif

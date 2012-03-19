@@ -1,0 +1,70 @@
+CHASSIS
+frontLeftMotor = PWM Left,1
+rearLeftMotor = PWM Left,2
+
+frontRightMotor = PWM Right,1
+rearRightMotor = PWM Right,2
+
+leftFrontBrake = DigitalInput Left,3
+leftRearBrake = DigitalInput Left,4
+rightFrontBrake = DigitalInput Right,3
+rightRearBrake = DigitalInput Right,4
+
+
+CHASSIS_SENSORS
+leftEncoder = DigitalInput Left,1 & Left,11
+rightEncoder = DigitalInput Right,1 & Right,11
+
+Gyroscope = Analog,1
+Accelerometer X = Analog,2
+Accelerometer Y = Analog,3
+Accelerometer Z = Analog,4
+I2C Accelerometer = I2C
+
+
+BRIDGE_MANIPULATOR
+bridgeManipulatorMotor1 PWM Left,3
+bridgeManipulatorMotor2 PWM Right,3 (Right,5)
+
+forwardSwitch DigitalInput Left,5
+rearwardSwitch DigitalInput Right,5
+
+
+LEVEL_ONE_SCORING_SYSTEM
+ScoringRampManipulator PWM Left,4
+
+RampDown DigitalInput Left,6
+RampUp DigitalInput Right,6
+
+
+FRONT_UPPER_BELT
+frontRoller PWM Left,5
+
+
+BOTTOM_BELT
+topRoller PWM Right,6
+
+
+MIDDLE_BELT
+bottomRoller PWM Left,7
+topRoller PWM Right,7
+bottomRollerMover PWM Left,8
+
+rollerRetracted DigitalInput Left,7
+rollerExtended DigitalInput Right,7
+
+
+ELEVATOR
+leftElevatorMotor PWM Left,9
+rightElevatorMotor PWM Right,9
+
+elevatorTopSensor DigitalInput Left,8
+elevatorBottomSensor DigitalInput Right,8
+
+
+TOP_FRONT_BELT
+topRoller PWM Left,10
+
+
+TOP_REAR_BELT
+topRoller PWM Right,10

@@ -1,0 +1,14 @@
+DRIVE_STICK
+Left Side Drive = Left Stick Y Axis
+Right Side Drive = Right Stick Y Axis
+
+Brake Control = Button 6 (R1)
+Precision Drive System = [While Holding Button 1(X)] Left Stick (Arcade Style)
+
+
+MANIPULATOR_STICK
+Bridge Manipulator Forward = Button 1(X)
+Bridge Manipulator Rearward = Button 2(Y)
+
+Bottom Roller In = Button 2(A)
+Bottom Roller Out = Button 3(B)
