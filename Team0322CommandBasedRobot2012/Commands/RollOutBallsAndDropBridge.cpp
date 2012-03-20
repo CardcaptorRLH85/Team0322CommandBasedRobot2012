@@ -15,12 +15,13 @@ RollOutBallsAndDropBridge::RollOutBallsAndDropBridge() {
         // e.g. AddParallel(new Command1());
         //      AddSequential(new Command2());
         // Command1 and Command2 will run in parallel.
-	AddSequential(new RollOutFrontBelts());
-	AddSequential(new DriveBackwards());
-	AddSequential(new BridgeManipulatorRearward());
+
         // A command group will require all of the subsystems that each member
         // would require.
         // e.g. if Command1 requires chassis, and Command2 requires arm,
         // a CommandGroup containing them would require both the chassis and the
         // arm.
+	AddSequential(new RollOutFrontBelts());
+	AddSequential(new DriveBackwards());
+	AddSequential(new BridgeManipulatorRearward());
 }
