@@ -1,10 +1,6 @@
-#include "RollUpMiddleSection.h"
-#include "RollInBottomBelt.h"
-#include "RollUpMiddleSection.h"
-#include "RunTopRearBeltUp.h"
-#include "RunTopFrontBeltUp.h"
+#include "LevelOneScore.h"
 
-RollUpMiddleSection::RollUpMiddleSection() {
+LevelOneScore::LevelOneScore() {
         // Add Commands here:
         // e.g. AddSequential(new Command1());
         //      AddSequential(new Command2());
@@ -21,7 +17,6 @@ RollUpMiddleSection::RollUpMiddleSection() {
         // e.g. if Command1 requires chassis, and Command2 requires arm,
         // a CommandGroup containing them would require both the chassis and the
         // arm.
-	AddParallel(new RollInBottomBelt());
-	AddSequential(new RunTopRearBeltUp());
-	AddSequential(new RunTopFrontBeltUp());
+	AddSequential(new ScoringRampDown());
+	AddSequential(new RollUpMiddleSection());	
 }

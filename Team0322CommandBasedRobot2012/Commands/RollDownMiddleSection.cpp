@@ -22,7 +22,6 @@ RollDownMiddleSection::RollDownMiddleSection() {
         // a CommandGroup containing them would require both the chassis and the
         // arm.
 	AddParallel(new RollOutBottomBelt());
-	AddParallel(new RollDownMiddleSection());
-	AddParallel(new RunTopRearBeltDown());
-	AddParallel(new RunTopFrontBeltDown());
+	AddSequential(new RunTopRearBeltDown());
+	AddSequential(new RunTopFrontBeltDown());
 }
