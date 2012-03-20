@@ -15,10 +15,10 @@ BridgeManipulator* CommandBase::bridgeManipulator = NULL;
 BottomBelt* CommandBase::bottomBelt = NULL;
 FrontUpperBelt* CommandBase::frontUpperBelt = NULL;
 MiddleBelt* CommandBase::middleBelt = NULL;
+LevelOneScoringSystem* CommandBase::levelOneScoringSystem = NULL;
 Elevator* CommandBase::elevator = NULL;
 TopFrontBelt* CommandBase::topFrontBelt = NULL;
 TopRearBelt* CommandBase::topRearBelt = NULL;
-LevelOneScoringSystem* CommandBase::levelOneScoringSystem = NULL;
 OI* CommandBase::oi = NULL;
 
 void CommandBase::init() {
@@ -30,10 +30,10 @@ void CommandBase::init() {
 	bridgeManipulator = new BridgeManipulator();
 	bottomBelt = new BottomBelt();
 	frontUpperBelt = new FrontUpperBelt();
-	//middleBelt = new MiddleBelt();
+	middleBelt = new MiddleBelt();
+	levelOneScoringSystem = new LevelOneScoringSystem();
 	//elevator = new Elevator();
 	//topFrontBelt = new TopFrontBelt();
 	//topRearBelt = new TopRearBelt();
-	//levelOneScoringSystem = new LevelOneScoringSystem();
 	oi = new OI();
 }

@@ -5,14 +5,14 @@
 #include "Subsystems/DriverStationLCDSystem.h"
 #include "Subsystems/ChassisSensors.h"
 #include "Subsystems/Chassis.h"
-#include "Subsystems/Elevator.h"
 #include "Subsystems/BridgeManipulator.h"
 #include "Subsystems/BottomBelt.h"
 #include "Subsystems/FrontUpperBelt.h"
 #include "Subsystems/MiddleBelt.h"
+#include "Subsystems/LevelOneScoringSystem.h"
+#include "Subsystems/Elevator.h"
 #include "Subsystems/TopFrontBelt.h"
 #include "Subsystems/TopRearBelt.h"
-#include "Subsystems/LevelOneScoringSystem.h"
 #include "OI.h"
 
 /**
@@ -33,10 +33,10 @@ public:
 	static BottomBelt *bottomBelt;
 	static FrontUpperBelt *frontUpperBelt;
 	static MiddleBelt *middleBelt;
+	static LevelOneScoringSystem *levelOneScoringSystem;
 	static Elevator *elevator;
 	static TopFrontBelt *topFrontBelt;
 	static TopRearBelt *topRearBelt;
-	static LevelOneScoringSystem *levelOneScoringSystem;
 	static OI *oi;
 };
 
