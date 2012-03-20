@@ -1,4 +1,7 @@
 #include "AutoMoveForwardAndScore.h"
+#include "DriveForward.h"
+#include "DriveBackwards.h"
+#include "LevelOneScore.h"
 
 AutoMoveForwardAndScore::AutoMoveForwardAndScore() {
         // Add Commands here:

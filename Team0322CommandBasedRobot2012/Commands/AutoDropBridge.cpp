@@ -1,5 +1,7 @@
 #include "AutoDropBridge.h"
 #include "DriveForward.h"
+#include "DriveBackwards.h"
+#include "DriveForwardSlowly.h"
 #include "BridgeManipulatorForward.h"
 
 AutoDropBridge::AutoDropBridge() {

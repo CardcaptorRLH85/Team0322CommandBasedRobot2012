@@ -1,4 +1,6 @@
 #include "LevelOneScore.h"
+#include "ScoringRampDown.h"
+#include "RollUpMiddleSection.h"
 
 LevelOneScore::LevelOneScore() {
         // Add Commands here:
