@@ -4,6 +4,7 @@
 #include "Commands/ResetSensors.h"
 #include "Commands/DriverStationLCDOutput.h"
 #include "Commands/ClearLCD.h"
+#include "Commands/AutonSelector.h"
 
 class Team0322CommandBasedRobot2012 : public IterativeRobot {
 private:
@@ -14,7 +15,7 @@ private:
 	
 	virtual void RobotInit() {
 		CommandBase::init();
-		// autonomousCommand = NULL;
+		autonomousCommand = new AutonSelector();
 		resetSensors = new ResetSensors();
 		driverStationLCDOutput = new DriverStationLCDOutput();
 		clearLCD = new ClearLCD();
@@ -36,7 +37,7 @@ private:
 	}
 	
 	virtual void AutonomousInit() {
-		// autonomousCommand->Start();
+		autonomousCommand->Start();
 		clearLCD->Start();
 		resetSensors->Cancel();
 	}
@@ -51,7 +52,7 @@ private:
 		// teleop starts running. If you want the autonomous to 
 		// continue until interrupted by another command, remove
 		// this line or comment it out.
-		// autonomousCommand->Cancel();
+		autonomousCommand->Cancel();
 		resetSensors->Cancel();
 	}
 	
