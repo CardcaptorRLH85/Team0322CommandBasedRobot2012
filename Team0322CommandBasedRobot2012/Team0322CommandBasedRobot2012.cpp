@@ -18,6 +18,10 @@ private:
 		resetSensors = new ResetSensors();
 		driverStationLCDOutput = new DriverStationLCDOutput();
 		clearLCD = new ClearLCD();
+		
+		resetSensors->SetRunWhenDisabled(true);
+		driverStationLCDOutput->SetRunWhenDisabled(true);
+		clearLCD->SetRunWhenDisabled(true);
 	}
 	
 	virtual void DisabledInit() {
@@ -28,6 +32,7 @@ private:
 	virtual void DisabledPeriodic() {
 		resetSensors->Cancel();
 		driverStationLCDOutput->Run();
+		Scheduler::GetInstance()->Run();
 	}
 	
 	virtual void AutonomousInit() {
