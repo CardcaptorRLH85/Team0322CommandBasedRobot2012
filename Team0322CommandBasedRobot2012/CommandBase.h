@@ -4,6 +4,7 @@
 #include "Commands/Command.h"
 #include "Subsystems/DriverStationLCDSystem.h"
 #include "Subsystems/ChassisSensors.h"
+#include "Subsystems/AutonomusModeSwitches.h"
 #include "Subsystems/Chassis.h"
 #include "Subsystems/BridgeManipulator.h"
 #include "Subsystems/BottomBelt.h"
@@ -28,6 +29,7 @@ public:
 	// Create a single static instance of all of your subsystems
 	static DriverStationLCDSystem *driverStationLCDSystem;
 	static ChassisSensors *chassisSensors;
+	static AutonomusModeSwitches *autonomusModeSwitches;
 	static Chassis *chassis;
 	static BridgeManipulator *bridgeManipulator;
 	static BottomBelt *bottomBelt;

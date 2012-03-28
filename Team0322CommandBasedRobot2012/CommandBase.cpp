@@ -10,6 +10,7 @@ CommandBase::CommandBase() : Command() {
 // Initialize a single static instance of all of your subsystems to NULL
 DriverStationLCDSystem* CommandBase::driverStationLCDSystem = NULL;
 ChassisSensors* CommandBase::chassisSensors = NULL;
+AutonomusModeSwitches* CommandBase::autonomusModeSwitches = NULL;
 Chassis* CommandBase::chassis = NULL;
 BridgeManipulator* CommandBase::bridgeManipulator = NULL;
 BottomBelt* CommandBase::bottomBelt = NULL;
@@ -26,6 +27,7 @@ void CommandBase::init() {
 	// line should be repeated for each subsystem in the project.
 	driverStationLCDSystem = new DriverStationLCDSystem();
 	chassisSensors = new ChassisSensors();
+	autonomusModeSwitches = new AutonomusModeSwitches();
 	chassis = new Chassis();
 	bridgeManipulator = new BridgeManipulator();
 	bottomBelt = new BottomBelt();
