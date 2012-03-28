@@ -1,5 +1,5 @@
-#ifndef DRIVEBACKWARDS_H
-#define DRIVEBACKWARDS_H
+#ifndef DRIVE_BACKWARDS_H
+#define DRIVE_BACKWARDS_H
 
 #include "../CommandBase.h"
 

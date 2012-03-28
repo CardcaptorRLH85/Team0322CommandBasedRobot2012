@@ -1,5 +1,5 @@
-#ifndef CLEARLCD_H
-#define CLEARLCD_H
+#ifndef CLEAR_LCD_H
+#define CLEAR_LCD_H
 
 #include "../CommandBase.h"
 

@@ -1,5 +1,5 @@
-#ifndef DRIVEFORWARDSLOWLY_H
-#define DRIVEFORWARDSLOWLY_H
+#ifndef DRIVE_FORWARD_SLOWLY_H
+#define DRIVE_FORWARD_SLOWLY_H
 
 #include "../CommandBase.h"
 

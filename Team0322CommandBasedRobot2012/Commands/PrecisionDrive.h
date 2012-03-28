@@ -1,5 +1,5 @@
-#ifndef PRECISIONDRIVE_H
-#define PRECISIONDRIVE_H
+#ifndef PRECISION_DRIVE_H
+#define PRECISION_DRIVE_H
 
 #include "../CommandBase.h"
 
