@@ -1,10 +1,10 @@
-#include "AutonDropBridge.h"
+#include "AutonReleaseBallsAndDropBridge.h"
+#include "BridgeManipulatorForward.h"
+#include "BridgeManipulatorRearward.h"
 #include "DriveForward.h"
 #include "DriveBackwards.h"
-#include "DriveForwardSlowly.h"
-#include "BridgeManipulatorForward.h"
 
-AutonDropBridge::AutonDropBridge() {
+AutonReleaseBallsAndDropBridge::AutonReleaseBallsAndDropBridge() {
         // Add Commands here:
         // e.g. AddSequential(new Command1());
         //      AddSequential(new Command2());
@@ -21,8 +21,13 @@ AutonDropBridge::AutonDropBridge() {
         // e.g. if Command1 requires chassis, and Command2 requires arm,
         // a CommandGroup containing them would require both the chassis and the
         // arm.
+	AddSequential(new WaitCommand(8.0));
+	AddSequential(new BridgeManipulatorForward());
 	AddSequential(new DriveForward());
-	AddParallel(new BridgeManipulatorForward());
-	AddSequential(new DriveForwardSlowly());
+	AddSequential(new BridgeManipulatorForward());
+	AddParallel(new BridgeManipulatorRearward());
 	AddSequential(new DriveBackwards());
+	AddSequential(new BridgeManipulatorForward());
+	AddSequential(new WaitCommand(1.0));
+	AddSequential(new BridgeManipulatorRearward());
 }

@@ -3,7 +3,7 @@
 #include "DriveBackwards.h"
 #include "LevelOneScore.h"
 
-AutoMoveForwardAndScore::AutoMoveForwardAndScore() {
+AutonMoveForwardAndScore::AutonMoveForwardAndScore() {
         // Add Commands here:
         // e.g. AddSequential(new Command1());
         //      AddSequential(new Command2());

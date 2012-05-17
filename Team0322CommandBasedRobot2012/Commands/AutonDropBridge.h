@@ -8,9 +8,9 @@
  *
  * @author 322Programmer
  */
-class AutoDropBridge: public CommandGroup {
+class AutonDropBridge: public CommandGroup {
 public:	
-	AutoDropBridge();
+	AutonDropBridge();
 };
 
 #endif

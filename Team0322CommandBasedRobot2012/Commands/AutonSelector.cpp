@@ -3,13 +3,12 @@
 #include "AutonDropBridge.h"
 #include "AutonReleaseBallsDropBridgeTakeAndReleaseBalls.h"
 #include "AutonMoveForwardAndScore.h"
+#include "AutonReleaseBallsAndDropBridge.h"
 
 AutonSelector::AutonSelector() {
 	// Use requires() here to declare subsystem dependencies
 	// eg. requires(chassis);
-	requires(autonomusModeSwitches);
-	int mode = 0;
-	Command autonCommand = NULL;
+	Requires(autonomusModeSwitches);
 }
 
 // Called just before this Command runs the first time
@@ -36,6 +35,10 @@ void AutonSelector::Execute() {
 			
 		case 3:
 			autonCommand = new AutonMoveForwardAndScore();
+			break;
+			
+		case 4:
+			autonCommand = new AutonReleaseBallsAndDropBridge();
 			break;
 			
 		default:

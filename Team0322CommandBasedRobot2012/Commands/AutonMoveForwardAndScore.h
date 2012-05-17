@@ -8,9 +8,9 @@
  *
  * @author 322Programmer
  */
-class AutoMoveForwardAndScore: public CommandGroup {
+class AutonMoveForwardAndScore: public CommandGroup {
 public:	
-	AutoMoveForwardAndScore();
+	AutonMoveForwardAndScore();
 };
 
 #endif
